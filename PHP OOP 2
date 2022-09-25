@@ -5,6 +5,7 @@ interface Hewan
     public function bersuara();
     public function berkendara();
   }
+  
 class Monyet implements Hewan
   {
     public function berjalan()
