@@ -1,0 +1,57 @@
+class product
+  {
+    protected $name;
+    protected $price;
+    protected $discount;
+    
+    function_construct()
+    {
+    }
+    
+    function price()
+    {
+      echo "Harga";
+    }
+    
+    function name()
+    {
+      echo "Nama";
+    }
+    
+    function discount()
+    {
+      echo "Diskon";
+    }
+  }
+  
+class CDMusic extends product
+  {
+    protected $artist;
+    protected $genre;
+    
+    function price()
+    {
+      echo "price +10%";
+    }
+    
+    function discount()
+    {
+      echo "discount +10%";
+    }
+  }
+  
+  class CDCabinet extends product
+    {
+      protected $capacity;
+      protected $model;
+      
+      function price()
+      {
+        echo "price +15%";
+      }
+      
+      function discount()
+      {
+        echo "no discount";
+      }
+    }
